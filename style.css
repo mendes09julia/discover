@@ -7,24 +7,21 @@
 :root {
   --text-color: white;
   --bg-url: url(./assets/assets/bg-mobile.jpg);
-  --stroke-color:  rgba(255, 255, 255, 0.5);
+  --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url:  url(./assets/assets/moon-stars.svg);
-   
-
+  --switch-bg-url: url(./assets/assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/assets/bg-mobile-light.jpg);
-  --stroke-color:  rgba(0, 0, 0, 0.5);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
-  --switch-bg-url:  url(./assets/assets/sun.svg);
-
+  --switch-bg-url: url(./assets/assets/sun.svg);
 }
 
 body {
@@ -84,16 +81,11 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-
-
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
-
-
 
 #switch span {
   display: block;
@@ -104,7 +96,6 @@ body * {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
-
 
 /* links - lista */
 
@@ -148,12 +139,10 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  
+
   padding: 24px 0;
 
   font-size: 24px;
-
-
 }
 
 #social-links a {
@@ -168,23 +157,20 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
-    
-
 }
 
 footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
-
 }
-  
+
 /* media queries */
 
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/assets/bg-desktop.jpg);
-      }
+  }
 
   .light {
     --bg-url: url(./assets/assets/bg-desktop-light.jpg);
